@@ -1,3 +1,7 @@
-@import "./components/Footer";
-@import "./components/Header";
-@import "./components/Main";
+@import "./_variables.scss";
+@import "./_mixins.scss";
+@import "./components/_Footer.scss";
+@import "./components/_Header.scss";
+@import "./components/_Main.scss";
+@import "./components/_Nav.scss";
+

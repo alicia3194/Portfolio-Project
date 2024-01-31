@@ -1,19 +1,25 @@
 import React from "react";
-import "../Nav/Nav.css"
+// import "../Nav/Nav.css"
+import logo from "../../../assets/logo.png";
 
 const Nav = () => {
   return (
-    <nav>
+    <nav className="nav">
       <div className="logo">
-        <a href="#home">Tu Logo</a> {/* Reemplaza #home con tu logo o nombre */}
+        <img src={logo} alt="Logo"   style={{ 
+        height: '80px', 
+        margin: '10px'
+    }}  /> 
       </div>
-      <ul className="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+
+        <ul className="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
     </nav>
   );
 };

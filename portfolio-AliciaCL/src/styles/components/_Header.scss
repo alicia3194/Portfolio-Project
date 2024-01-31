@@ -1,0 +1,39 @@
+@import "../variables";
+@import "../mixins";
+
+.container {
+  @include centrar-flex;
+  flex-direction: column;
+  padding: 40px;
+  position: static;
+  background-color:$color-fondo-main;
+
+  .container-header {
+    position: relative;
+    padding: 20px;
+    margin: 0 auto; 
+    width: 800px; 
+    z-index: 2;
+    font-size: 25px;
+    background-color: $color-fondo-header;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.395); 
+    border-radius: 10px; 
+  }
+
+  .container-photo {
+    position: absolute;
+    left: 60%;
+    transform: translateX(-22%);
+    z-index: 10;
+
+    .profile-photo {
+      height: 280px;
+      transition: transform 0.5s ease;
+
+      &:hover {
+        transform: translate(10%);
+      }
+    }
+  }
+}
+

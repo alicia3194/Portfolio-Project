@@ -23,7 +23,6 @@ const Badges = () => {
         <div key={index} className="badge">
           <img src={badge.image} alt={badge.name} />
           <p>{badge.description}</p>
-          <a href={badge.url} target="_blank" rel="noopener noreferrer">More information</a>
         </div>
       ))}
     </div>

@@ -1,0 +1,102 @@
+@import "../variables";
+
+.main {
+  background-color: $color-fondo-main;
+  padding: 1rem;
+}
+
+/* AboutMe */
+.about-section {
+  background-color: #f4f4f4; 
+}
+
+.about-container {
+    margin: 0 auto; 
+  padding: 30px;
+  text-align: center;
+}
+
+.about-container h1{
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 50px; 
+}
+.about-container h2 {
+  color:#ee7694; 
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+.about-container p {
+  color: #4a4a4a; 
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.about-container a {
+  color: #ee5d81;  
+  text-decoration: none;
+}
+
+.about-container a:hover {
+  text-decoration: underline;
+}
+
+/* Skills */
+
+.skills {
+  text-align: center;
+  margin: 20px;
+  cursor: pointer;
+}
+.skills h1 {
+ font-size: 50px;
+ color: #333;
+}
+.skills h2 {
+  font-size: 25px;
+  color: #828080;
+ }
+
+.skill {
+  margin: 10px 0;
+}
+
+.skill-name {
+  display: inline-block;
+  width: 250px;
+  text-align: left;
+}
+
+.skill-bar {
+  display: inline-block;
+  width: 60%;
+  height: 20px;
+  background-color: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.skill-level {
+  height: 100%;
+  border-radius: 10px;
+}
+
+.frontend .skill-level {
+  background-color: #ba5d74; 
+}
+
+.backend .skill-level {
+  background-color: #99627A; 
+}
+
+.databases .skill-level {
+  background-color: #C88EA7; 
+}
+
+.methodologiesAndTools .skill-level {
+  background-color: #dbacac; 
+}

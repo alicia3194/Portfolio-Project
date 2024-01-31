@@ -1,17 +1,24 @@
 import React from "react";
 import Nav from "./Nav/Nav";
-import "./Header.css";
+import Photo from "../../assets/Alicia.png"
 
 const Header = () => {
   return (
+    <>
+    <Nav /> 
+    
     <header className="container">
-      <Nav /> 
-      
-      <h1>I'm a</h1>
-      <p>Full Stack Developer</p> 
-      <a href="#contact" className="contact-button">Contact Me</a>
-      
+      <div className="container-header">
+        <h1>I'm a</h1>
+        <h2>Full Stack Developer</h2> 
+      </div>
+
+      <div className="container-photo">
+        <img src={Photo} alt="Photo" className="profile-photo"/> 
+      </div>
     </header>
+
+    </>
   );
 };
 
